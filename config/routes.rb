@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "patients/:id", to: "patients#show", as: :patient 
   post "patients", to: "patients#create"
   get "patients/:id/edit", to: "patients#edit", as: :edit_patient
+  patch "patients/:id", to: "patients#update"
 
   # Defines the root path route ("/")
   root "patients#index"
