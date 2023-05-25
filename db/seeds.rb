@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+Patient.create(first_name: 'Greg', last_name: 'House', diagnosis: 'Vicadin Addict', born_on: Date.new(1959, 6, 11))
+Patient.create(first_name: 'James', last_name: 'Wilson', diagnosis: 'Savior Complex', born_on: Date.new(1969, 2, 28))
+Patient.create(first_name: 'Lisa', last_name: 'Cuddy', diagnosis: 'Dependent Personality Disorder', born_on: Date.new(1966, 5, 21))
+Patient.create(first_name: 'Eric', last_name: 'Foreman', diagnosis: 'Superiority Complex', born_on: Date.new(1973, 7, 20))
+Patient.create(first_name: 'Robert', last_name: 'Chase', diagnosis: 'Inferiority Complex', born_on: Date.new(1979, 2, 12))
+Patient.create(first_name: 'Allison', last_name: 'Cameron', diagnosis: 'Moral Superiority Complex', born_on: Date.new(1979, 4, 12))
+Patient.create(first_name: 'Chris', last_name: 'Taub', diagnosis: 'God complex, mid-life crisis', born_on: Date.new(1965, 3, 24))
+Patient.create(first_name: 'Lawrence', last_name: 'Kutner', diagnosis: 'Depression', born_on: Date.new(1977, 4, 23))
+Patient.create(first_name: 'Amber', last_name: 'Volakis', diagnosis: 'NPD', born_on: Date.new(1975, 3, 22))
+Patient.create(first_name: 'Remy', last_name: 'Hadley', diagnosis: "Huntington's Disease", born_on: Date.new(1984, 3, 10))
