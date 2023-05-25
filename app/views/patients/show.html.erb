@@ -32,3 +32,11 @@
 
 <br>
 <%= link_to "Edit Patient", edit_patient_path(@patient) %>
+<br>
+<br>
+ <%= link_to "Delete Patient", patient_path(@patient),
+                    data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "Are you sure you want to delete patient ##{@patient.id}?"
+                    }
+                 %>

@@ -25,4 +25,10 @@ class PatientsController < ApplicationController
         @patient.update(params.require(:patient).permit(:first_name, :last_name, :diagnosis, :born_on))
         redirect_to @patient
     end
+
+    def destroy
+        @patient = Patient.find(params[:id])
+        @patient.destroy
+        redirect_to patients_path
+    end
 end

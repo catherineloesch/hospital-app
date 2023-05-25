@@ -19,7 +19,15 @@
             <td> <%= patient.last_name %></td>
             <td> <%= patient.diagnosis %></td>
             <td> <%= patient.born_on %></td>
-            <td><%= link_to "Edit Patient", edit_patient_path(patient) %>
+            <td> &nbsp;
+            <%= link_to "Edit Patient", edit_patient_path(patient) %>  &nbsp; | &nbsp;
+             <%= link_to "Delete Patient", patient_path(patient),
+                    data: {
+                        turbo_method: :delete,
+                        turbo_confirm: "Are you sure you want to delete patient ##{patient.id}?"
+                    }
+                 %>
+            </td>
         </tr>
     <% end %>
 </table>
