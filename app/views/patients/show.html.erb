@@ -1,0 +1,31 @@
+<%= link_to "All Patients", patients_path %>
+
+<br>
+
+<h2>Patient # <%= @patient.id %></h2>
+
+<br>
+
+<ul>
+    <li>
+        <strong>First name:</strong>
+        <%= @patient.first_name %>
+    </li>
+    <br>
+    <li>
+        <strong>Last name:</strong>
+        <%= @patient.last_name %>
+    </li>
+    <br>
+    <li>
+        <strong>Diagnosis:</strong>
+        <%= @patient.diagnosis %>
+    </li>
+    <br>
+    <li>
+        <strong>DOB:</strong>
+        <%= @patient.born_on %>
+    </li>
+
+
+</ul>
