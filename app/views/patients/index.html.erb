@@ -19,6 +19,7 @@
             <td> <%= patient.last_name %></td>
             <td> <%= patient.diagnosis %></td>
             <td> <%= patient.born_on %></td>
+            <td><%= link_to "Edit Patient", edit_patient_path(patient) %>
         </tr>
     <% end %>
 </table>

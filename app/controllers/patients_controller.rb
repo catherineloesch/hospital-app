@@ -15,4 +15,8 @@ class PatientsController < ApplicationController
         Patient.create(params.require(:patient).permit(:first_name, :last_name, :diagnosis, :born_on))
         redirect_to patients_path
     end
+
+    def edit
+        @patient = Patient.find(params[:id])
+    end
 end
