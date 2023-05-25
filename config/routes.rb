@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get "patients", to: "patients#index"
   get "patients/new", to: "patients#new", as: :new_patient
   get "patients/:id", to: "patients#show", as: :patient 
- 
+  post "patients", to: "patients#create"
 
   # Defines the root path route ("/")
   root "patients#index"
